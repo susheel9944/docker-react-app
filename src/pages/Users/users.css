@@ -1,0 +1,138 @@
+.users-page {
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  background: #f7f9fc;
+  min-height: 100vh;
+}
+
+.users-page h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.users-page input[type="text"],
+.users-page input[type="search"],
+.users-page input {
+  width: 300px;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  margin-bottom: 18px;
+  outline: none;
+  transition: 0.3s;
+}
+.users-page input:focus {
+  border-color: #4c7fff;
+  box-shadow: 0 0 0 3px rgba(76, 127, 255, 0.25);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+}
+
+table thead {
+  background: #4c7fff;
+  color: #fff;
+}
+table th {
+  text-align: left;
+  padding: 14px;
+  font-size: 15px;
+}
+
+table td {
+  padding: 12px 14px;
+  font-size: 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+table td input {
+  padding: 8px;
+  border: 1px solid #bfc8d6;
+  border-radius: 6px;
+  width: 100%;
+}
+
+button {
+  padding: 6px 14px;
+  margin-right: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+  transition: 0.25s;
+}
+
+button:nth-child(1) {
+  background: #3182ce;
+  color: #fff;
+}
+button:nth-child(1):hover {
+  background: #286bb0;
+}
+
+button.save-btn {
+  background: #16a34a;
+  color: #fff;
+}
+button.save-btn:hover {
+  background: #13803c;
+}
+
+button:nth-child(2) {
+  background: #e11d48;
+  color: #fff;
+}
+button:nth-child(2):hover {
+  background: #be123c;
+}
+
+@media (max-width: 700px) {
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+  thead {
+    display: none;
+  }
+  tr {
+    background: #fff;
+    margin-bottom: 14px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  td {
+    border: none;
+    position: relative;
+    padding-left: 110px;
+  }
+  td::before {
+    position: absolute;
+    left: 15px;
+    font-weight: 600;
+    color: #4c7fff;
+  }
+  td:nth-of-type(1)::before {
+    content: "Name";
+  }
+  td:nth-of-type(2)::before {
+    content: "Email";
+  }
+  td:nth-of-type(3)::before {
+    content: "Company";
+  }
+  td:nth-of-type(4)::before {
+    content: "Actions";
+  }
+}
