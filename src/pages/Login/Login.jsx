@@ -45,7 +45,7 @@ const Login = () => {
               Welcome back
             </div>
             <div className="login-sub">
-              Sign in to continue to your dashboard
+              Sign in to continue to your dashboard Made by susheel
             </div>
           </div>
         </div>
